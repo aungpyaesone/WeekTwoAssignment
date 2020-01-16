@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_home_background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".SecondActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbar_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_chevron_left_black_24dp"
+        app:title="@string/profile" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="@dimen/profile_width"
+        android:layout_height="@dimen/profile_height"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_large"
+        android:src="@drawable/profile"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/it_is_user_profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/tvLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        android:text="@string/name"
+        android:textColor="@color/text_color"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_large"
+        android:text="@string/name_hint"
+        android:textColor="#AD070707"
+        android:textSize="@dimen/text_regular_2x"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabel" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:text="@string/email"
+        android:textColor="@color/text_color"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/tvName"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:text="@string/email"
+        android:textColor="#AD070707"
+        android:textSize="@dimen/text_regular_2x"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvName"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:text="@string/contact_phone"
+        android:textColor="@color/text_color"
+        app:layout_constraintStart_toStartOf="@+id/tvEmail"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:text="@string/phone_number"
+        android:textColor="#AD000000"
+        android:textSize="@dimen/text_regular_2x"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvEmail"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_xlarge"
+        android:text="@string/recently_likes"
+        android:textColor="#BF000000"
+        android:textSize="@dimen/text_regular_3x"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvPhone"
+        app:layout_constraintTop_toBottomOf="@+id/tvPhone" />
+
+    <ImageView
+        android:id="@+id/ivTheFlashMovie"
+        android:layout_width="@dimen/poster_width"
+        android:layout_height="@dimen/poster_height"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:scaleType="centerCrop"
+        android:src="@drawable/the_flash"
+        android:contentDescription="@string/it_is_movie_poster"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="@dimen/poster_width"
+        android:layout_height="@dimen/poster_height"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/it_is_movie_poster"
+        android:src="@drawable/hotel_transylvania"
+        app:layout_constraintBottom_toBottomOf="@+id/ivTheFlashMovie"
+        app:layout_constraintStart_toEndOf="@+id/ivTheFlashMovie"
+        app:layout_constraintTop_toTopOf="@+id/ivTheFlashMovie" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="."
+        android:layout_width="@dimen/rating_width"
+        android:layout_height="@dimen/rating_height"
+        android:background="@drawable/rating_background"
+        android:gravity="center"
+        android:text="@string/rating"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/text_heading_1x"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ivTheFlashMovie"
+        app:layout_constraintEnd_toEndOf="@+id/ivTheFlashMovie" />
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="@dimen/rating_width"
+        android:layout_height="@dimen/rating_height"
+        android:background="@drawable/rating_background"
+        android:gravity="center"
+        android:text="@string/rating_two"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/text_heading_1x"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="@string/the_flash"
+        android:textSize="@dimen/text_small"
+        android:textColor="#F2020202"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ivTheFlashMovie"
+        app:layout_constraintStart_toStartOf="@+id/ivTheFlashMovie"
+        app:layout_constraintTop_toBottomOf="@+id/ivTheFlashMovie" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center"
+        android:text="@string/hotel_tyansylvania_3_summer_vacation"
+        android:textColor="#D5000000"
+        android:textSize="@dimen/text_small"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

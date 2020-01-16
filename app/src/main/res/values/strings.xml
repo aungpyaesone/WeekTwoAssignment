@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">WeekTwoAssignment</string>
+    <string name="action_settings">Settings</string>
+    <string name="it_is_for_ticket_icon">It is for ticket icon</string>
+    <string name="showtime">SHOWTIME</string>
+    <string name="register_as_a_gurdian">Register as a Gurdian</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="mail_hint">mgmg@gmail.com</string>
+    <string name="name_hint">e.g Mg Mg</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="_09xxxxx">09xxxxx</string>
+    <string name="password">Password</string>
+    <string name="password_hint">******</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="i_agree_to">I agree to</string>
+    <string name="terms_of_services">Terms of Services</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="contin">Continue</string>
+    <string name="or_login_using_social_media">or login using Social Media</string>
+    <string name="profile">PROFILE</string>
+    <string name="rating">9.7</string>
+    <string name="rating_two">7.8</string>
+    <string name="the_flash">THE FLASH</string>
+    <string name="hotel_tyansylvania_3_summer_vacation">HOTEL TYANSYLVANIA 3: SUMMER VACATION</string>
+    <string name="back">Back</string>
+    <string name="it_is_user_profile">It is user profile</string>
+    <string name="it_is_movie_poster">It is movie poster</string>
+    <string name="contact_phone">Contact Phone</string>
+    <string name="recently_likes">Recently Likes</string>
+    <string name="full_cast_crew"><![CDATA[Full Cast & Crew]]></string>
+    <string name="dermott_downs_director">Dermott Downs Director</string>
+    <string name="grant_gustin">Grant Gustin</string>
+    <string name="candice_patton">Candice Patton</string>
+    <string name="danielle_panabaker">Danielle Panabaker</string>
+    <string name="_230k">230K</string>
+    <string name="_2003">2003</string>
+    <string name="_390">390</string>
+    <string name="the_flash_detail_title">THE FLASH</string>
+    <string name="_3_292_people_watching">3,292 People watching</string>
+
+
+    <string name="caption">After being struck by lighting, Barry Allen wakes up from his coma to discover he\'s been given the power of super speed, becoming the Flash, fighting crime in Central City</string>
+</resources>

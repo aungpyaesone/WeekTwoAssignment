@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="text_color">#F4511E</color>
+    <color name="text_color2">#535252</color>
+    <color name="text_color3">#60535252</color>
+
+    <color name="link_color">#1E88E5</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="toolbar_color">#00008577</color>
+    <color name="rating_bar_tint_color">#000000</color>
+    <color name="rating_star_color">#FFB300</color>
+</resources>
